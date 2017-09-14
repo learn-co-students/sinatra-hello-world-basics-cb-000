@@ -1,5 +1,5 @@
 class App < Sinatra::Base
 
   get '/' do
-  'Hello world!'
-end
+    "Hello World #{params[:name]}".strip
+  end
